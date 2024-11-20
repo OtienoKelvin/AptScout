@@ -26,6 +26,7 @@ class STextStrings {
   static const String fullNameHint = 'Enter your full name';
   static const String locationHint = 'Enter your location';
   static const String orSignInWith = 'Or sign in with';
+  static const String orSignUpWith = 'Or sign up with';
   static const String dontHaveAccount = "Don't have an account?";
   static const String alreadyHaveAccount = "Already have an account?";
   static const String signIn = 'Sign In';

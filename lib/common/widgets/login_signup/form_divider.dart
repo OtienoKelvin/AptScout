@@ -15,7 +15,7 @@ class FormDivider extends StatelessWidget {
     return Row(
       children: [
         Flexible(child: Divider(color: dark ? SColors.darkgray : SColors.gray, thickness: 0.5, indent: 60, endIndent: 5)),
-        Text('Or Sign In With', style: Theme.of(context).textTheme.labelMedium,),
+        Text(dividerText, style: Theme.of(context).textTheme.labelMedium,),
         Flexible(child: Divider(color: dark ? SColors.darkgray : SColors.gray, thickness: 0.5, indent: 5, endIndent: 60,)),
       ],
     );

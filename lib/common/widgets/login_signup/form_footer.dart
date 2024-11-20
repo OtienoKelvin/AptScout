@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 
 class Footer extends StatelessWidget {
   const Footer({
-    super.key, required this.footerQuestionText, required this.footerButtonText,
+    super.key, required this.footerQuestionText, required this.footerButtonText, required this.footerButtonAction, //required this.footerButtonAction,
   });
   
   final String footerQuestionText;
   final String footerButtonText;
+  final void Function()? footerButtonAction;
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +17,7 @@ class Footer extends StatelessWidget {
       children: [
         Text(footerQuestionText, style: Theme.of(context).textTheme.labelMedium,),
         TextButton(
-          onPressed: (){}, 
+          onPressed: footerButtonAction, 
           child: Text(
             footerButtonText, 
             style: SUnderlineTextStyle.textStyle,

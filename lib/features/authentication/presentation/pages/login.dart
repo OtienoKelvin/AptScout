@@ -2,12 +2,14 @@ import 'package:apartment_scout/common/styles/spacing_style.dart';
 import 'package:apartment_scout/common/widgets/login_signup/form_divider.dart';
 import 'package:apartment_scout/common/widgets/login_signup/form_footer.dart';
 import 'package:apartment_scout/common/widgets/login_signup/social_button.dart';
+import 'package:apartment_scout/features/authentication/presentation/pages/sign_up.dart';
 import 'package:apartment_scout/features/authentication/presentation/widgets/login/login_form.dart';
 import 'package:apartment_scout/features/authentication/presentation/widgets/login/login_header.dart';
 import 'package:apartment_scout/utilities/constants/sizes.dart';
 import 'package:apartment_scout/utilities/constants/text_strings.dart';
 import 'package:apartment_scout/utilities/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -38,7 +40,7 @@ class LoginScreen extends StatelessWidget {
               const SizedBox(height: SSizes.spaceBtwSections,),
 
               //Sign up button
-              const Footer(footerQuestionText: STextStrings.dontHaveAccount, footerButtonText: STextStrings.signUp,)
+              Footer(footerQuestionText: STextStrings.dontHaveAccount, footerButtonText: STextStrings.signUp, footerButtonAction: () => Get.to(() => const SignUpScreen(),)),
             ],
           ),
         ),

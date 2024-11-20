@@ -1,5 +1,6 @@
 import 'package:apartment_scout/common/styles/underline_text_style.dart';
 import 'package:apartment_scout/utilities/constants/sizes.dart';
+import 'package:apartment_scout/utilities/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 
 class LoginForm extends StatelessWidget {
@@ -57,7 +58,7 @@ class LoginForm extends StatelessWidget {
               width: double.infinity, 
               child: ElevatedButton(
                 onPressed: (){},  
-                child: const Text('Sign In')
+                child: const Text(STextStrings.signIn)
               )
             ),
           ],
