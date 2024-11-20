@@ -42,4 +42,5 @@ class SColors {
   static const Color lightgray = Color(0xFFE5E5E5);
   static const Color softgray = Color(0xFFF5F5F5);
   static const Color white = Color(0xFFFFFFFF);
+  static const Color lighterblue = Color(0xFFa7c4fe);
 }

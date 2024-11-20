@@ -31,4 +31,10 @@ class SHelperFunctions {
   static bool isDarkMode(BuildContext context) {
     return Theme.of(context).brightness == Brightness.dark;
   }
+
+  static Size get screenSize => MediaQuery.of(Get.context!).size;
+
+  static double get screenHeight => MediaQuery.of(Get.context!).size.height;
+
+  static double get screenWidth => MediaQuery.of(Get.context!).size.width;
 }
