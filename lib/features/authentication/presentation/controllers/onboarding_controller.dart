@@ -9,7 +9,7 @@ class OnboardingController extends GetxController{
   final pageController = PageController();
   Rx<int> currentPageIndex = 0.obs;
 
-  //Update page idicator
+  //Update page indicator
   void updatePageIndex(index) => currentPageIndex.value = index;
 
   //Jump to specific dot selected page

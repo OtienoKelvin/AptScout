@@ -1,8 +1,10 @@
 import 'package:apartment_scout/common/styles/underline_text_style.dart';
+import 'package:apartment_scout/features/authentication/presentation/pages/code_verification.dart';
 import 'package:apartment_scout/utilities/constants/sizes.dart';
 import 'package:apartment_scout/utilities/constants/text_strings.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SignUpForm extends StatelessWidget {
   const SignUpForm({
@@ -96,7 +98,13 @@ class SignUpForm extends StatelessWidget {
         const SizedBox(height: SSizes.spaceBtwSections,),
 
         //Sign up button
-        SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){}, child: const Text(STextStrings.signUp),)),
+        SizedBox(
+          width: double.infinity, 
+          child: ElevatedButton(
+            onPressed: () => Get.to(()=> const CodeVerificationScreen()), 
+            child: const Text(STextStrings.signUp),
+          )
+        ),
       ],),
     ));
   }

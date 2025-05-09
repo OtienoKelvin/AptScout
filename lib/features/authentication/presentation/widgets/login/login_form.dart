@@ -1,7 +1,10 @@
 import 'package:apartment_scout/common/styles/underline_text_style.dart';
+import 'package:apartment_scout/features/authentication/presentation/pages/passwordReset/forgot_password.dart';
+import 'package:apartment_scout/navigation_menu.dart';
 import 'package:apartment_scout/utilities/constants/sizes.dart';
 import 'package:apartment_scout/utilities/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({
@@ -48,7 +51,7 @@ class LoginForm extends StatelessWidget {
         
                 //Forgot password
                 const Spacer(),
-                TextButton(onPressed: (){}, child: const Text('Forgot Password?', style: SUnderlineTextStyle.textStyle,))
+                TextButton(onPressed: () => Get.to(() => const ForgotPassword()), child: const Text('Forgot Password?', style: SUnderlineTextStyle.textStyle,))
               ],
             ),
             const SizedBox(height: SSizes.spaceBtwSections,),
@@ -57,7 +60,7 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity, 
               child: ElevatedButton(
-                onPressed: (){},  
+                onPressed: () => Get.offAll(() => const NavigationMenu()),
                 child: const Text(STextStrings.signIn)
               )
             ),

@@ -13,7 +13,7 @@ class SColors {
   //background colors
   static const Color lightBackgroundColor = Color(0xFFF8F8F8);
   static const Color darkBackgroundColor = Color(0xFF1f2029);
-  static const Color primaryBackgroundColor = Color(0xFFFFFFFF);
+  static const Color primaryBackgroundColor = Color(0xFFF2F2F2);
 
   //background container colors
   static const Color lightContainer = Color(0xFFF6F6F6);
@@ -43,4 +43,6 @@ class SColors {
   static const Color softgray = Color(0xFFF5F5F5);
   static const Color white = Color(0xFFFFFFFF);
   static const Color lighterblue = Color(0xFFa7c4fe);
+  static const Color containerBackground = Color(0xffe9f0ff);
+  static const Color somegray = Color(0xFFc9ccd1);
 }

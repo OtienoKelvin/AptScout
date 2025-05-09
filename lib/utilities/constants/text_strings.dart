@@ -31,4 +31,18 @@ class STextStrings {
   static const String alreadyHaveAccount = "Already have an account?";
   static const String signIn = 'Sign In';
   static const String signUp = 'Sign Up';
+
+  //verfication texts
+  static const String verificationTitle = 'Verify Your Email';
+  static const String verificationSubTitle = 'Enter the verification code sent to your email address';
+  static const String resendCode = 'Resend Code';
+  static const String notReceiveOTP = 'Didn\'t receive the OTP?';
+  static const String verify = 'Verify';
+  static const String resetPasswordTitle = 'Reset Your Password';
+  static const String resetPasswordSubTitle = 'Your new password must be different from previously used passwords';
+  static const String resetPassword = 'Reset Password';
+  static const String forgotPasswordTitle = 'Password Reset Code Request';
+  static const String sendResetCode = 'Send Reset Code';
+  static const String forgotPasswordSubTitle = 'Enter your email address to receive password reset instructions';
+  static const String enterCode = 'Enter Code';
 }

@@ -22,7 +22,7 @@ class SSizes {
 
   //Button sizes
   static const double buttonHeight = 18.0;
-  static const double buttonRadius = 12.0;
+  static const double buttonRadius = 24.0;
   static const double buttonWidth = 120.0;
   static const double buttonElevation =4.0;
 
@@ -41,6 +41,7 @@ class SSizes {
   static const double borderRadiusSm = 4.0;
   static const double borderRadiusMd = 8.0;
   static const double borderRadiusLg = 12.0;
+  static const double defaultRadius = 16.0;
 
   //Divider height
   static const double dividerHeight = 1.0;

@@ -14,7 +14,7 @@ class SThemeManager {
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     brightness: Brightness.light,
-    fontFamily: 'Poppins',
+    fontFamily: 'inter',
     primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.white,
     textTheme: STextTheme.lightTextTheme,
